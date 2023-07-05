@@ -1,0 +1,95 @@
+import {StyleSheet} from 'react-native';
+import {
+  fontPixel,
+  heightPixel,
+  pixelSizeHorizontal,
+  pixelSizeVertical,
+  widthPixel,
+} from '../../../utils/normalize';
+const styles = StyleSheet.create({
+  profile_wrapper: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    backgroundColor: '#ffffff',
+    height: '100%',
+    paddingBottom: pixelSizeVertical(10),
+  },
+  profile_pic_wrapper: {
+    width: widthPixel(80.47),
+    height: heightPixel(85.42),
+    marginVertical: pixelSizeVertical(10),
+  },
+  profile_name: {
+    color: '#1c1c1c',
+    marginTop: pixelSizeVertical(20),
+    fontSize: fontPixel(17),
+    lineHeight: fontPixel(22),
+    textAlign: 'center',
+    textTransform: 'capitalize',
+  },
+  profile_id: {
+    color: '#686868',
+    textTransform: 'uppercase',
+    marginTop: pixelSizeVertical(10),
+    textAlign: 'center',
+    fontSize: fontPixel(15),
+    lineHeight: fontPixel(20),
+  },
+  download_prescriptions_wrapper: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    paddingHorizontal: pixelSizeHorizontal(9),
+
+    backgroundColor: 'rgba(39,173,128,0.1)',
+    borderRadius: 8,
+    width: widthPixel(160),
+    height: heightPixel(33.33),
+    marginTop: pixelSizeVertical(8),
+  },
+  donwload_text: {
+    color: '#27AD80',
+    fontSize: fontPixel(10),
+    lineHeight: fontPixel(13),
+    marginLeft: pixelSizeHorizontal(5),
+    textTransform: 'capitalize',
+  },
+  date_blood_grp_text: {
+    marginTop: pixelSizeVertical(6),
+    color: '#27AD80',
+    fontSize: fontPixel(16),
+    lineHeight: fontPixel(24),
+    fontWeight: '700',
+    textAlign: 'center',
+    textTransform: 'uppercase',
+  },
+  info_item_wrapper: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+    width: widthPixel(300),
+    height: heightPixel(35),
+    backgroundColor: 'rgba(39,173,128,0.1)',
+    borderRadius: 8,
+    marginVertical: pixelSizeVertical(8),
+    paddingHorizontal: pixelSizeHorizontal(17),
+  },
+  info_item_heading: {
+    color: '#27AD80',
+    textTransform: 'capitalize',
+    textAlign: 'left',
+    width: '50%',
+    fontSize: fontPixel(12),
+    lineHeight: fontPixel(18),
+  },
+  btn_wrapper: {
+    marginTop: pixelSizeVertical(14),
+    width: widthPixel(206),
+    height: heightPixel(48),
+  },
+});
+
+export default styles;
